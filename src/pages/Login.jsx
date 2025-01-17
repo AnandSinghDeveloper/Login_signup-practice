@@ -17,7 +17,7 @@ const Login = () => {
            <input placeholder='Enter your Email' className=' placeholder:text-[#E395DF] w-full py-2 px-2 mb-2 rounded bg-transparent border-[#A952A3] border-2 ' type="email" />
            <input placeholder='Enter Your pasword' className=' placeholder:text-[#E395DF] w-full py-2 px-2  mb-2 rounded bg-transparent border-[#A952A3] border-2' type="email" />
 
-           <p className='text-[#365B64] font-normal'>Don't have account  <Link to='Signup' className=' text-[#A952A3] '>SignUP Now !</Link></p>
+           <p className='text-[#365B64] font-normal'>Don't have account  <Link to='/Signup' className=' text-[#A952A3] '>SignUP Now !</Link></p>
            </form>
             
           <button to='/Signup' className='flex justify-center items-center w-full py-2 border bg-[#E395DF] rounded-lg capitalize text-xl font-medium'> login</button>
