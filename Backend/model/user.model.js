@@ -28,3 +28,10 @@ userSchma.methods.generateToken = function () {
   const token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET , {expiresIn : '24h'});
   return token;
 };
+
+
+userSchma.statics.hashPassword = async (password) => {
+  return await bcrypt.hash(password, 10);
+};
+
+

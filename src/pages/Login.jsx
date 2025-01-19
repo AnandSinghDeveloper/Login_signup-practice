@@ -35,12 +35,14 @@ const  submitHandler=(e)=>{
                 submitHandler(e)
            }} >
            <input
+           required
            value={email}
            onChange={(e)=>{
           setEmail(e.target.value);
 
            }} placeholder='Enter your Email' className=' placeholder:text-[#E395DF] w-full py-2 px-2 mb-2 rounded bg-transparent border-[#A952A3] border-2 ' type="email" />
            <input
+           required
             value={password}
             onChange={(e)=>{
            setPassword(e.target.value);

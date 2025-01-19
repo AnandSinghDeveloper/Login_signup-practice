@@ -21,6 +21,8 @@ const submitHandler =(e)=>{
   password : password
  }
 
+ localStorage.setItem('user',JSON.stringify(SignupData));
+
  console.log(SignupData);
  
  setEmail('');
@@ -29,7 +31,10 @@ const submitHandler =(e)=>{
  setPassword('');
  setPhone('');
 
+
 }   
+
+
 
 
   return (
@@ -47,6 +52,8 @@ const submitHandler =(e)=>{
               }} >
                <div className=' w-full flex justify-between  pb-2 '> 
                 <input
+                required
+
                 value={name}
                 onChange={(e)=>{
                    setName(e.target.value)
@@ -60,6 +67,8 @@ const submitHandler =(e)=>{
                 placeholder='Last Name' className='border-2 w-[45%] rounded placeholder:text-[#FF735C] border-[#FF735C] px-2' type="text" />
                </div>
                <input
+            
+               required
                value={phone}
                onChange={(e)=>{
                   setPhone(e.target.value)
@@ -67,12 +76,14 @@ const submitHandler =(e)=>{
                 placeholder='Enter Your Phone Number' className='w-full border-2 py-2 mb-2 rounded px-2 border-[#FF735C] placeholder:text-[#FF735C]'  type="text" />
 
               <input
+              required
               value={email}
               onChange={(e)=>{
                  setEmail(e.target.value)
               }}
               placeholder='Enter your Email' className=' placeholder:text-[#FF735C] w-full py-2 px-2 mb-2 rounded bg-transparent border-[#FF735C] border-2 ' type="email" />
               <input
+              required
               value={password}
               onChange={(e)=>{
                  setPassword(e.target.value)
