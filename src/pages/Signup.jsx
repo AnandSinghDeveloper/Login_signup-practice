@@ -8,6 +8,7 @@ const Signup = () => {
   const [phone,setPhone]=useState('')
   const [name,setName]=useState('')
   const [lastname,setLastname]=useState('')
+  
 
 const submitHandler =(e)=>{
 
@@ -23,7 +24,6 @@ const submitHandler =(e)=>{
 
  localStorage.setItem('user',JSON.stringify(SignupData));
 
- console.log(SignupData);
  
  setEmail('');
  setLastname('');
