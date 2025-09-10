@@ -40,7 +40,7 @@ const loginUser = async (req, res) => {
 
     const {email, password} = req.body
 
-    const ChackedUser = await userModel.find({email}.)
+    const ChackedUser = await userModel.find({email})
 
 
     
